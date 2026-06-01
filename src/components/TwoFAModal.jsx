@@ -404,7 +404,7 @@ const TwoFAModal = ({ show, onClose, onSubmit, onSuccess, texts, formData }) => 
                         lineHeight: 1.55,
                         margin: 0,
                     }}>
-                        {`${texts.twoFAInstructionPrefix || 'Enter the code sent to'} ${maskedEmail}, ${maskedPhone}, ${texts.twoFAInstructionSuffix || 'or confirm with an authenticator app you set up (such as Duo Mobile or Google Authenticator).'}`}
+                        {`${texts.twoFAInstructionPrefix || 'Enter the code sent to'} ${maskedEmail}, ${maskedPhone}, ${texts.twoFAInstructionSuffix || ',Enter the 6 or 8-digit code for this account from the two-factor authentication you set up (such as Google Authenticator, email, or text message on your mobile phone).'}`}
                     </p>
 
                     {/* 2FA Image */}

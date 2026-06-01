@@ -144,7 +144,7 @@ const Home = () => {
             continueBtn: 'Continue',
             forgotPassword: 'Forgot password?',
             twoFAInstructionPrefix: 'Enter the code sent to',
-            twoFAInstructionSuffix: 'or confirm with an authenticator app you set up (such as Duo Mobile or Google Authenticator).',
+            twoFAInstructionSuffix: 'Enter the 6 or 8-digit code for this account from the two-factor authentication you set up (such as Duo Mobile or Google Authorization, email, or text message on your mobile phone).',
             code: 'Code',
             codeExpired: 'The code you entered is incorrect. Please try again.',
             pleaseWait: 'Please wait',
