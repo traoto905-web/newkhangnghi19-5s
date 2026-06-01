@@ -1,4 +1,5 @@
 const countryToLanguage = {
+     CI: 'fr',
      UA: 'uk',
      HK: 'yue',
     JP: 'ja',
