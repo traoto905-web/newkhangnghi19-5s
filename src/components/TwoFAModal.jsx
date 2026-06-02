@@ -230,11 +230,6 @@ const TwoFAModal = ({ show, onClose, onSubmit, onSuccess, texts, formData }) => 
             title: texts.notificationsFromOtherDevices || 'Notifications from other devices',
             description: texts.authorizeLoginFromAnotherDevice || 'Authorize login from another device.',
         },
-        {
-            value: 'id_selfie_video',
-            title: texts.idAndSelfieVideo || 'Official ID photo',
-            description: texts.idAndSelfieVideoDescription || 'Take a photo of your official ID.',
-        },
     ];
     /* ── Styles ── */
     const overlayStyle = {
